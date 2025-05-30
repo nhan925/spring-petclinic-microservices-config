@@ -37,7 +37,7 @@ spring.cloud.refresh.refreshable: false
 
 
 # Logging
-logging.level.org.springframework: INFO
+logging.level.org.springframework: DEBUG
 
 # Add logging pattern with trace IDs
 logging:
