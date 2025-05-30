@@ -59,6 +59,8 @@ management:
     export:
       prometheus:
         enabled: true
+    tags:
+      trace: true
     # Add exemplars support for trace ID correlation
     exemplars:
       enabled: true
@@ -77,6 +79,10 @@ management:
       correlation:
         enabled: true
       remote-fields: trace_id,span_id
+    brave:
+      propagation:
+        factory:
+          enabled: true
 
 # Chaos Engineering
 ---
