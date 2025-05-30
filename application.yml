@@ -58,7 +58,7 @@ management:
   metrics:
     export:
       prometheus:
-        enabled: true
+        enabled: true     
     # Add exemplars support for trace ID correlation
     exemplars:
       enabled: true
@@ -67,6 +67,7 @@ management:
         http.server.requests: true
     tags:
       application: ${spring.application.name}
+      trace: true
   tracing:
     sampling:
       probability: 1
