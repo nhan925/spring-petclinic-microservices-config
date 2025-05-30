@@ -59,8 +59,6 @@ management:
     export:
       prometheus:
         enabled: true
-    tags:
-      trace: true
     # Add exemplars support for trace ID correlation
     exemplars:
       enabled: true
