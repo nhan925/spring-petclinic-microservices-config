@@ -73,6 +73,10 @@ management:
     # Add W3C trace propagation type
     propagation:
       type: W3C
+    baggage:
+      correlation:
+        enabled: true
+      remote-fields: trace_id,span_id
 
 # Chaos Engineering
 ---
