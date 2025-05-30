@@ -79,10 +79,6 @@ management:
       correlation:
         enabled: true
       remote-fields: trace_id,span_id
-    brave:
-      propagation:
-        factory:
-          enabled: true
 
 # Chaos Engineering
 ---
