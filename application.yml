@@ -8,6 +8,8 @@ server:
 
 # embedded database init, supports mysql too trough the 'mysql' spring profile
 spring:
+  reactor:  # to have traceId in the gateway
+    context-propagation: AUTO
   sql:
     init:
       schema-locations: classpath*:db/hsqldb/schema.sql
@@ -16,8 +18,6 @@ spring:
     sampler:
       probability: 1.0
   cloud:
-    reactor:
-      context-propagation: auto
     config:
       # Allow the microservices to override the remote properties with their own System properties or config file
       allow-override: true
